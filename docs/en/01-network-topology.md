@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/docs/ru/01-network-topology.md)
-- 🇺🇦 [Українська](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/docs/uk/01-network-topology.md)
+- 🇷🇺 [Русский](../ru/01-network-topology.md)
+- 🇺🇦 [Українська](../uk/01-network-topology.md)
 
 # 🌐 Network Topology
 
