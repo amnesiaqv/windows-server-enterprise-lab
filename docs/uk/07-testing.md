@@ -159,31 +159,31 @@ gpresult /r
 
 ### IP-конфігурація
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка Ping
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### Розпізнавання DNS
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Результат Group Policy
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 
 ### Перегляд подій
 
-![Event Viewer](../images/testing/event-viewer.png)
+![Event Viewer](images/testing/event-viewer.png)
 
 ---
 

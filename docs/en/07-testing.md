@@ -159,31 +159,31 @@ The following items were successfully verified:
 
 ### IP Configuration
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Ping Test
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### DNS Resolution
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Group Policy Result
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 
 ### Event Viewer
 
-![Event Viewer](../images/testing/event-viewer.png)
+![Event Viewer](images/testing/event-viewer.png)
 
 ---
 

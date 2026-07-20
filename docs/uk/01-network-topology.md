@@ -16,7 +16,7 @@
 
 ## Схема мережі
 
-![Network Topology](../images/infrastructure/topology.png)
+![Network Topology](images/infrastructure/topology.png)
 
 ---
 
@@ -139,25 +139,25 @@ gpresult /r
 
 ### Конфігурація мережі
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка з'єднання
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### DNS-резолюція
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Застосування групових політик
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 

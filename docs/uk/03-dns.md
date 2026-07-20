@@ -118,19 +118,19 @@ ipconfig /all
 
 ### DNS Manager
 
-![DNS Manager](../images/dns/dns-manager.png)
+![DNS Manager](images/dns/dns-manager.png)
 
 ---
 
 ### Конфігурація IP
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка DNS
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 

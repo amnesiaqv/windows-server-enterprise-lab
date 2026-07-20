@@ -118,19 +118,19 @@ ipconfig /all
 
 ### Диспетчер DNS
 
-![DNS Manager](../images/dns/dns-manager.png)
+![DNS Manager](images/dns/dns-manager.png)
 
 ---
 
 ### Сетевая конфигурация
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Проверка разрешения DNS
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 

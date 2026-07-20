@@ -110,25 +110,25 @@
 
 ### Общие папки
 
-![Shared Folders](../images/file-server/file-server.png)
+![Shared Folders](images/file-server/file-server.png)
 
 ---
 
 ### Разрешения NTFS
 
-![NTFS Permissions](../images/file-server/ntfs-permissions.png)
+![NTFS Permissions](images/file-server/ntfs-permissions.png)
 
 ---
 
 ### Разрешения общего доступа
 
-![Share Permissions](../images/file-server/share-permissions.png)
+![Share Permissions](images/file-server/share-permissions.png)
 
 ---
 
 ### Подключенный сетевой диск
 
-![Mapped Drive](../images/client/mapped-drive.png)
+![Mapped Drive](images/client/mapped-drive.png)
 
 ---
 

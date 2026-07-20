@@ -147,25 +147,25 @@ The Active Directory deployment was validated using the following tests.
 
 ### Active Directory Users and Computers
 
-![Active Directory](../images/active-directory/active-directory.png)
+![Active Directory](images/active-directory/active-directory.png)
 
 ---
 
 ### Domain Users
 
-![Users](../images/active-directory/users.png)
+![Users](images/active-directory/users.png)
 
 ---
 
 ### Security Groups
 
-![Security Groups](../images/active-directory/security-groups.png)
+![Security Groups](images/active-directory/security-groups.png)
 
 ---
 
 ### Domain Joined Workstation
 
-![Domain Joined](../images/client/domain-joined.png)
+![Domain Joined](images/client/domain-joined.png)
 
 ---
 

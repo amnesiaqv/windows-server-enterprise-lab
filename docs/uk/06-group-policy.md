@@ -149,13 +149,13 @@ gpresult /r
 
 ### Group Policy Management Console
 
-![Group Policy Management](../images/group-policy/gpo.png)
+![Group Policy Management](images/group-policy/gpo.png)
 
 ---
 
 ### Перевірка GPResult
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 

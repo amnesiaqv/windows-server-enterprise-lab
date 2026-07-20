@@ -110,25 +110,25 @@ The File Server configuration was validated using the following tests.
 
 ### Shared Folders
 
-![Shared Folders](../images/file-server/file-server.png)
+![Shared Folders](images/file-server/file-server.png)
 
 ---
 
 ### NTFS Permissions
 
-![NTFS Permissions](../images/file-server/ntfs-permissions.png)
+![NTFS Permissions](images/file-server/ntfs-permissions.png)
 
 ---
 
 ### Share Permissions
 
-![Share Permissions](../images/file-server/share-permissions.png)
+![Share Permissions](images/file-server/share-permissions.png)
 
 ---
 
 ### Mapped Network Drive
 
-![Mapped Drive](../images/client/mapped-drive.png)
+![Mapped Drive](images/client/mapped-drive.png)
 
 ---
 

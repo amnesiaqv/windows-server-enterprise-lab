@@ -16,7 +16,7 @@
 
 ## Схема сети
 
-![Network Topology](../images/infrastructure/topology.png)
+![Network Topology](images/infrastructure/topology.png)
 
 ---
 
@@ -139,25 +139,25 @@ gpresult /r
 
 ### Конфигурация сети
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Проверка соединения
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### Проверка DNS
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Применение групповых политик
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 

@@ -159,31 +159,31 @@ gpresult /r
 
 ### Конфигурация IP
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Проверка Ping
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### Проверка DNS
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Результат GPResult
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 
 ### Просмотр событий
 
-![Event Viewer](../images/testing/event-viewer.png)
+![Event Viewer](images/testing/event-viewer.png)
 
 ---
 

@@ -16,7 +16,7 @@ The entire laboratory was deployed using **Oracle VirtualBox** and isolated with
 
 ## Network Diagram
 
-![Network Topology](../images/infrastructure/topology.png)
+![Network Topology](images/infrastructure/topology.png)
 
 ---
 
@@ -139,25 +139,25 @@ gpresult /r
 
 ### Network Configuration
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
 ### Connectivity Test
 
-![Ping Test](../images/testing/ping.png)
+![Ping Test](images/testing/ping.png)
 
 ---
 
 ### DNS Resolution
 
-![NSLookup](../images/testing/nslookup.png)
+![NSLookup](images/testing/nslookup.png)
 
 ---
 
 ### Group Policy Processing
 
-![GPResult](../images/testing/gpresult.png)
+![GPResult](images/testing/gpresult.png)
 
 ---
 

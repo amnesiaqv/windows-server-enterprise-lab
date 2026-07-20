@@ -134,19 +134,19 @@ ipconfig /release
 
 ### DHCP Manager
 
-![DHCP Manager](../images/dhcp/dhcp-manager.png)
+![DHCP Manager](images/dhcp/dhcp-manager.png)
 
 ---
 
 ### Address Leases
 
-![DHCP Leases](../images/dhcp/dhcp-leases.png)
+![DHCP Leases](images/dhcp/dhcp-leases.png)
 
 ---
 
 ### Client IP Configuration
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 

@@ -134,19 +134,19 @@ ipconfig /release
 
 ### Консоль DHCP
 
-![DHCP Manager](../images/dhcp/dhcp-manager.png)
+![DHCP Manager](images/dhcp/dhcp-manager.png)
 
 ---
 
 ### Выданные аренды
 
-![DHCP Leases](../images/dhcp/dhcp-leases.png)
+![DHCP Leases](images/dhcp/dhcp-leases.png)
 
 ---
 
 ### Сетевая конфигурация клиента
 
-![IP Configuration](../images/testing/ipconfig.png)
+![IP Configuration](images/testing/ipconfig.png)
 
 ---
 
