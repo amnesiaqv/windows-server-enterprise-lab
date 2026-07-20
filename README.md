@@ -1,6 +1,6 @@
 ![License](https://img.shields.io/github/license/amnesiaqv/windows-server-enterprise-lab?style=for-the-badge)
 
-![Last Commit](https://img.shields.io/github/last-commit/amnesiaqv windows-server-enterprise-lab?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/amnesiaqv/windows-server-enterprise-lab?style=for-the-badge)
 
 ![Stars](https://img.shields.io/github/stars/amnesiaqv/windows-server-enterprise-lab?style=for-the-badge)
 
