@@ -4,7 +4,7 @@
 
 ![Stars](https://img.shields.io/github/stars/amnesiaqv/windows-server-enterprise-lab?style=for-the-badge)
 
-# 🌍 Languages
+# 🌍 Languagess
 
 - 🇬🇧 English (default)
 - 🇷🇺 [Русский](README.ru.md)
