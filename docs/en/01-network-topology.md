@@ -16,7 +16,7 @@ The entire laboratory was deployed using **Oracle VirtualBox** and isolated with
 
 ## Network Diagram
 
-![Network Topology](../images/infrastructure/topology.png)
+![Network Topology](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/blob/main/images/infrastructure/topology.png)
 
 ---
 
