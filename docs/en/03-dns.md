@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](docs/ru/03-dns.md)
-- 🇺🇦 [Українська](docs/uk/03-dns.md)
+- 🇷🇺 [Русский](../ru/03-dns.md)
+- 🇺🇦 [Українська](../uk/03-dns.md)
 
 # 🌐 DNS Server Configuration
 

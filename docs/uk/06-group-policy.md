@@ -1,7 +1,7 @@
 # 🌍 Язык
 
-- 🇬🇧 [English](docs/en/06-group-policy.md)
-- 🇷🇺 [Русский](docs/ru/06-group-policy.md)
+- 🇬🇧 [English](../en/06-group-policy.md)
+- 🇷🇺 [Русский](../ru/06-group-policy.md)
 - 🇺🇦 Українська(default)
 
 # 🛡️ Конфігурація Group Policy

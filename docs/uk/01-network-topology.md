@@ -1,7 +1,7 @@
 # 🌍 Язык
 
-- 🇬🇧 [English](docs/en/01-network-topology.md)
-- 🇷🇺 [Русский](docs/ru/01-network-topology.md)
+- 🇬🇧 [English](../en/01-network-topology.md)
+- 🇷🇺 [Русский](../ru/01-network-topology.md)
 - 🇺🇦 Українська(default)
 
 # 🌐 Топологія мережі

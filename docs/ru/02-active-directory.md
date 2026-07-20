@@ -1,8 +1,8 @@
 # 🌍 Язык
 
-- 🇬🇧 [English](docs/en/02-active-directory.md)
+- 🇬🇧 [English](../en/02-active-directory.md)
 - 🇷🇺 Русский(default)
-- 🇺🇦 [Українська](docs/uk/02-active-directory.md)
+- 🇺🇦 [Українська](../uk/02-active-directory.md)
 
 # 🏛️ Службы доменов Active Directory
 

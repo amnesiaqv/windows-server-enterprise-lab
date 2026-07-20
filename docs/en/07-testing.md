@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](docs/ru/07-testing.md)
-- 🇺🇦 [Українська](docs/uk/07-testing.md)
+- 🇷🇺 [Русский](../ru/07-testing.md)
+- 🇺🇦 [Українська](../uk/07-testing.md)
 
 # ✅ Infrastructure Testing and Validation
 

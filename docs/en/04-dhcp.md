@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](docs/ru/04-dhcp.md)
-- 🇺🇦 [Українська](docs/uk/04-dhcp.md)
+- 🇷🇺 [Русский](../ru/04-dhcp.md)
+- 🇺🇦 [Українська](../uk/04-dhcp.md)
 
 # 📡 DHCP Server Configuration
 

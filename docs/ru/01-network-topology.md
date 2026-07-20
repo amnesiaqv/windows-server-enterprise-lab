@@ -1,8 +1,8 @@
 # 🌍 Язык
 
-- 🇬🇧 [English](docs/en/01-network-topology.md)
+- 🇬🇧 [English](../en/01-network-topology.md)
 - 🇷🇺 Русский(default)
-- 🇺🇦 [Українська](docs/uk/01-network-topology.md)
+- 🇺🇦 [Українська](../uk/01-network-topology.md)
 
 # 🌐 Топология сети
 

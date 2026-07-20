@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](docs/ru/05-file-server.md)
-- 🇺🇦 [Українська](docs/uk/05-file-server.md)
+- 🇷🇺 [Русский](../ru/05-file-server.md)
+- 🇺🇦 [Українська](../uk/05-file-server.md)
 
 # 📁 File Server Configuration
 

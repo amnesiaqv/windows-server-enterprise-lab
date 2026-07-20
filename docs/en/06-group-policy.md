@@ -1,8 +1,8 @@
 # 🌍 Languages
 
 - 🇬🇧 English (default)
-- 🇷🇺 [Русский](docs/ru/06-group-policy.md)
-- 🇺🇦 [Українська](docs/uk/06-group-policy.md)
+- 🇷🇺 [Русский](../ru/06-group-policy.md)
+- 🇺🇦 [Українська](../uk/06-group-policy.md)
 
 # 🛡️ Group Policy Configuration
 

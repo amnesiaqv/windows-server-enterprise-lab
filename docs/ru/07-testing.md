@@ -1,8 +1,8 @@
 # 🌍 Язык
 
-- 🇬🇧 [English](docs/en/07-testing.md)
+- 🇬🇧 [English](../en/07-testing.md)
 - 🇷🇺 Русский(default)
-- 🇺🇦 [Українська](docs/uk/07-testing.md)
+- 🇺🇦 [Українська](../uk/07-testing.md)
 
 # ✅ Тестирование и проверка инфраструктуры
 
