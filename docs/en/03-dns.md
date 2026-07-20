@@ -1,3 +1,9 @@
+# 🌍 Languages
+
+- 🇬🇧 English (default)
+- 🇷🇺 [Русский](docs/ru/03-dns.md)
+- 🇺🇦 [Українська](docs/uk/03-dns.md)
+
 # 🌐 DNS Server Configuration
 
 ## Overview
@@ -8,7 +14,7 @@ The DNS server is integrated with Active Directory Domain Services (AD DS) and p
 
 ---
 
-# DNS Server Role
+## DNS Server Role
 
 The DNS Server role was installed on the Domain Controller (DC01) during the Active Directory deployment.
 
@@ -19,11 +25,11 @@ The DNS Server role was installed on the Domain Controller (DC01) during the Act
 | DNS Zone Type    | Active Directory-Integrated |
 | Domain Name      | KUZNIETSOV.local            |
 
-The DNS service stores and replicates DNS records within Active Directory, providing secure and centralized name resolution.
+he DNS service stores DNS records within Active Directory and replicates them automatically between Domain Controllers, providing secure and centralized name resolution.
 
 ---
 
-# DNS Zone Configuration
+## DNS Zone Configuration
 
 A Forward Lookup Zone was automatically created during the installation of Active Directory.
 
@@ -31,13 +37,13 @@ A Forward Lookup Zone was automatically created during the installation of Activ
 | ---------------- | ------------------- |
 | KUZNIETSOV.local | Forward Lookup Zone |
 
-The zone contains DNS records required for Active Directory services and client name resolution.
+The zone was automatically configured as an Active Directory-integrated zone during Domain Controller promotion.
 
 ---
 
-# Host Records
+## Host Records
 
-The following host records were successfully registered in the DNS zone.
+The following host (A) records were successfully registered in the DNS zone.
 
 | Hostname | Purpose            |
 | -------- | ------------------ |
@@ -49,11 +55,11 @@ Dynamic DNS updates allow client computers to automatically register and update 
 
 ---
 
-# DNS Resolution Process
+## DNS Resolution Process
 
 The DNS service performs the following functions:
 
-* Resolves hostnames to IPv4 addresses
+* Resolves hostnames to IP addresses
 * Supports Active Directory authentication
 * Locates Domain Controllers
 * Enables communication between domain members
@@ -63,7 +69,7 @@ Without a properly configured DNS server, domain logon and many Active Directory
 
 ---
 
-# Validation
+## Validation
 
 The DNS configuration was verified using the following tests.
 
@@ -78,7 +84,7 @@ The DNS configuration was verified using the following tests.
 
 ---
 
-# Verification Commands
+## Verification Commands
 
 The following commands were used to validate DNS functionality.
 
@@ -108,28 +114,28 @@ The preferred DNS server on each client points to the Domain Controller.
 
 ---
 
-# Screenshots
+## Screenshots
 
-## DNS Manager
+### DNS Manager
 
 ![DNS Manager](../images/dns/dns-manager.png)
 
 ---
 
-## IP Configuration
+### IP Configuration
 
 ![IP Configuration](../images/testing/ipconfig.png)
 
 ---
 
-## DNS Resolution
+### DNS Resolution
 
 ![NSLookup](../images/testing/nslookup.png)
 
 ---
 
-# Summary
+## Summary
 
 The DNS Server was successfully integrated with Active Directory Domain Services and provides centralized name resolution for the laboratory environment.
 
-Correct DNS configuration enables domain authentication, service discovery, client communication, and reliable operation of Active Directory.
+Correct DNS configuration enables reliable Active Directory authentication, service discovery, client communication, and overall domain functionality.

@@ -1,3 +1,9 @@
+# 🌍 Languages
+
+- 🇬🇧 English (default)
+- 🇷🇺 [Русский](docs/ru/07-testing.md)
+- 🇺🇦 [Українська](docs/uk/07-testing.md)
+
 # ✅ Infrastructure Testing and Validation
 
 ## Overview
@@ -8,7 +14,7 @@ The purpose of testing was to verify that all configured services operate correc
 
 ---
 
-# Test Environment
+## Test Environment
 
 | Component         | Value               |
 | ----------------- | ------------------- |
@@ -20,7 +26,7 @@ The purpose of testing was to verify that all configured services operate correc
 
 ---
 
-# Validation Checklist
+## Validation Checklist
 
 The following infrastructure components were successfully tested.
 
@@ -31,20 +37,20 @@ The following infrastructure components were successfully tested.
 | DHCP                  | Automatic IP assignment       |    ✅   |
 | File Server           | Shared folder access          |    ✅   |
 | Group Policy          | Policies applied successfully |    ✅   |
-| Login Script          | Executed during user logon    |    ✅   |
+| Logon Script          | Executed during user logon    |    ✅   |
 | Network Drive Mapping | Connected automatically       |    ✅   |
 | Domain Authentication | Successful                    |    ✅   |
 | Client Connectivity   | Successful                    |    ✅   |
 
 ---
 
-# Network Connectivity
+## Network Connectivity
 
 Connectivity between the Domain Controller and both client workstations was verified using ICMP (ping).
 
 Command:
 
-```cmd id="ixtq5r"
+```cmd
 ping DC01
 ```
 
@@ -56,11 +62,11 @@ Expected Result:
 
 ---
 
-# DNS Validation
+## DNS Validation
 
 DNS functionality was verified using the following command.
 
-```cmd id="wnkj8m"
+```cmd
 nslookup DC01
 ```
 
@@ -68,7 +74,7 @@ The Domain Controller hostname resolved successfully, confirming that the Active
 
 ---
 
-# DHCP Validation
+## DHCP Validation
 
 Client computers automatically received network configuration from the DHCP server.
 
@@ -76,25 +82,25 @@ Verified information included:
 
 * IPv4 Address
 * Subnet Mask
-* Default Gateway
+* Default Gateway (if configured)
 * Preferred DNS Server
 * DNS Suffix
 
 Command:
 
-```cmd id="skgrja"
+```cmd
 ipconfig /all
 ```
 
 ---
 
-# Group Policy Validation
+## Group Policy Validation
 
 Group Policy deployment was verified after signing in with a domain account.
 
 Command:
 
-```cmd id="ixz2zz"
+```cmd
 gpresult /r
 ```
 
@@ -102,7 +108,7 @@ The output confirmed that the configured Group Policy Objects had been successfu
 
 ---
 
-# File Server Validation
+## File Server Validation
 
 The shared folder was successfully accessed using the mapped network drive.
 
@@ -115,13 +121,13 @@ Verified functionality:
 
 Example network path:
 
-```text id="prdzf7"
+```text
 \\DC01\Public
 ```
 
 ---
 
-# Active Directory Validation
+## Active Directory Validation
 
 The following items were successfully verified:
 
@@ -133,7 +139,7 @@ The following items were successfully verified:
 
 ---
 
-# Test Results
+## Test Results
 
 | Test                    |  Result  |
 | ----------------------- | :------: |
@@ -149,39 +155,39 @@ The following items were successfully verified:
 
 ---
 
-# Screenshots
+## Screenshots
 
-## IP Configuration
+### IP Configuration
 
 ![IP Configuration](../images/testing/ipconfig.png)
 
 ---
 
-## Ping Test
+### Ping Test
 
 ![Ping Test](../images/testing/ping.png)
 
 ---
 
-## DNS Resolution
+### DNS Resolution
 
 ![NSLookup](../images/testing/nslookup.png)
 
 ---
 
-## Group Policy Result
+### Group Policy Result
 
 ![GPResult](../images/testing/gpresult.png)
 
 ---
 
-## Event Viewer
+### Event Viewer
 
 ![Event Viewer](../images/testing/event-viewer.png)
 
 ---
 
-# Conclusion
+## Conclusion
 
 The Enterprise Active Directory Lab was successfully deployed and validated.
 
@@ -189,4 +195,4 @@ All core infrastructure services—including Active Directory Domain Services, D
 
 The environment demonstrates practical experience with Windows Server administration, centralized identity management, network services, Group Policy deployment, and enterprise file sharing.
 
-This project closely reflects the configuration and validation processes commonly performed in small and medium-sized Windows enterprise environments.
+This project closely reflects the deployment, administration, and validation processes commonly performed in small and medium-sized Windows enterprise environments.

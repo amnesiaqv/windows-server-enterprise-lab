@@ -223,8 +223,31 @@ windows-server-enterprise-lab/
 │
 ├── docs/
 │   ├── en/
+│   │   ├── 01-network-topology.md
+│   │   ├── 02-active-directory.md
+│   │   ├── 03-dns.md
+│   │   ├── 04-dhcp.md
+│   │   ├── 05-file-server.md
+│   │   ├── 06-group-policy.md
+│   │   └── 07-testing.md
+│   │
 │   ├── ru/
+│   │   ├── 01-network-topology.md
+│   │   ├── 02-active-directory.md
+│   │   ├── 03-dns.md
+│   │   ├── 04-dhcp.md
+│   │   ├── 05-file-server.md
+│   │   ├── 06-group-policy.md
+│   │   └── 07-testing.md
+│   │
 │   └── uk/
+│       ├── 01-network-topology.md
+│       ├── 02-active-directory.md
+│       ├── 03-dns.md
+│       ├── 04-dhcp.md
+│       ├── 05-file-server.md
+│       ├── 06-group-policy.md
+│       └── 07-testing.md
 │
 ├── images/
 │   ├── active-directory/

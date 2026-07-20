@@ -1,3 +1,9 @@
+# 🌍 Languages
+
+- 🇬🇧 English (default)
+- 🇷🇺 [Русский](docs/ru/05-file-server.md)
+- 🇺🇦 [Українська](docs/uk/05-file-server.md)
+
 # 📁 File Server Configuration
 
 ## Overview
@@ -8,7 +14,7 @@ The Domain Controller hosts centralized shared folders that are accessible to au
 
 ---
 
-# File Server
+## File Server
 
 The Windows Server 2025 Domain Controller also functions as the File Server for the laboratory environment.
 
@@ -23,7 +29,7 @@ Shared folders provide centralized storage for users connected to the Active Dir
 
 ---
 
-# Shared Folders
+## Shared Folders
 
 Several shared folders were created to simulate departmental resources.
 
@@ -36,9 +42,9 @@ Several shared folders were created to simulate departmental resources.
 
 ---
 
-# Share Permissions
+## Share Permissions
 
-Share Permissions determine which users or groups can access a shared folder over the network.
+Share permissions control network-level access to shared folders, while NTFS permissions control access to files and folders on the local file system.
 
 Permissions were assigned using Active Directory security groups rather than individual user accounts.
 
@@ -46,21 +52,17 @@ This approach simplifies administration and follows Microsoft's recommended best
 
 ---
 
-# NTFS Permissions
+## NTFS Permissions
 
 NTFS permissions provide file system security and control access to files and folders stored on the server.
 
-Permissions can be granted to:
-
-* Users
-* Security Groups
-* Administrators
+NTFS permissions were assigned primarily to Active Directory security groups rather than individual user accounts, following Microsoft's recommended best practices for scalable access management.
 
 Using security groups makes permission management more scalable and easier to maintain.
 
 ---
 
-# Access Control
+## Access Control
 
 Access to shared resources follows the principle of least privilege.
 
@@ -76,7 +78,7 @@ The effective permissions depend on the combination of Share Permissions and NTF
 
 ---
 
-# Drive Mapping
+## Drive Mapping
 
 A network drive was automatically mapped for domain users through Group Policy or a logon script.
 
@@ -84,13 +86,13 @@ This allows users to access shared folders without manually creating network con
 
 Example:
 
-```text id="x2zv5q"
+```text
 \\DC01\Public
 ```
 
 ---
 
-# Validation
+## Validation
 
 The File Server configuration was validated using the following tests.
 
@@ -104,33 +106,33 @@ The File Server configuration was validated using the following tests.
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Shared Folders
+### Shared Folders
 
 ![Shared Folders](../images/file-server/file-server.png)
 
 ---
 
-## NTFS Permissions
+### NTFS Permissions
 
 ![NTFS Permissions](../images/file-server/ntfs-permissions.png)
 
 ---
 
-## Share Permissions
+### Share Permissions
 
 ![Share Permissions](../images/file-server/share-permissions.png)
 
 ---
 
-## Mapped Network Drive
+### Mapped Network Drive
 
 ![Mapped Drive](../images/client/mapped-drive.png)
 
 ---
 
-# Summary
+## Summary
 
 The File Server provides centralized storage for the Enterprise Active Directory Lab.
 

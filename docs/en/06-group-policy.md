@@ -1,3 +1,9 @@
+# 🌍 Languages
+
+- 🇬🇧 English (default)
+- 🇷🇺 [Русский](docs/ru/06-group-policy.md)
+- 🇺🇦 [Українська](docs/uk/06-group-policy.md)
+
 # 🛡️ Group Policy Configuration
 
 ## Overview
@@ -8,7 +14,7 @@ Group Policy is one of the core management technologies in Microsoft Active Dire
 
 ---
 
-# Group Policy Management
+## Group Policy Management
 
 Group Policy Objects were created and managed using the **Group Policy Management Console (GPMC)**.
 
@@ -23,18 +29,18 @@ The policies were linked to the appropriate Organizational Units (OUs) to ensure
 
 ---
 
-# Implemented Group Policy Objects
+## Implemented Group Policy Objects
 
 The following Group Policy Objects were successfully configured within the laboratory environment.
 
 | Group Policy          | Description                                                |
 | --------------------- | ---------------------------------------------------------- |
 | Set Wallpaper         | Configures a corporate desktop wallpaper for domain users  |
-| Hide Disk C           | Hides the local C: drive in File Explorer                  |
+| Hide Local C: Drive   | Hides the local C: drive in File Explorer                  |
 | Map Network Drives    | Automatically maps shared network drives at user logon     |
 | Disable CMD           | Prevents users from launching the Command Prompt           |
 | Disable Control Panel | Restricts access to the Control Panel and Windows Settings |
-| Disable REG           | Blocks access to the Windows Registry Editor               |
+| Disable Registry Tools| Blocks access to the Windows Registry Editor               |
 | Disable USB           | Prevents the use of removable USB storage devices          |
 | Audit Policy          | Enables auditing of selected Windows security events       |
 | Login Script          | Executes a logon script during user authentication         |
@@ -43,7 +49,7 @@ These policies demonstrate centralized administration, workstation hardening, an
 
 ---
 
-# Drive Mapping
+## Drive Mapping
 
 Network drives were automatically mapped for domain users during the logon process.
 
@@ -55,15 +61,13 @@ Example network path:
 
 The drive mapping provides users with immediate access to shared resources without requiring manual configuration.
 
-> Replace the network path above if your shared folder uses a different name.
-
 ---
 
-# Logon Script
+## Logon Script
 
 A logon script was deployed through Group Policy to automate user configuration.
 
-Example:
+Example logon script:
 
 ```bat
 net use P: \\DC01\Public
@@ -73,9 +77,9 @@ The script automatically connects the shared network folder each time a domain u
 
 ---
 
-# Administrative Purpose
+## Administrative Purpose
 
-The configured Group Policy Objects demonstrate common administrative and security practices used in enterprise Windows environments.
+The configured Group Policy Objects demonstrate common administrative, security, and configuration management practices used in enterprise Windows environments.
 
 The implemented policies provide the following functionality:
 
@@ -92,7 +96,7 @@ These policies improve security, simplify administration, and ensure consistent 
 
 ---
 
-# Group Policy Processing
+## Group Policy Processing
 
 After joining the Active Directory domain and signing in with a domain account, Windows clients automatically receive the configured Group Policy Objects.
 
@@ -105,7 +109,7 @@ Policies are processed during:
 
 ---
 
-# Validation
+## Validation
 
 The Group Policy deployment was successfully validated using the following tests.
 
@@ -125,7 +129,7 @@ The Group Policy deployment was successfully validated using the following tests
 
 ---
 
-# Verification Commands
+## Verification Commands
 
 ### Force Group Policy Update
 
@@ -141,24 +145,24 @@ gpresult /r
 
 ---
 
-# Screenshots
+## Screenshots
 
-## Group Policy Management Console
+### Group Policy Management Console
 
 ![Group Policy Management](../images/group-policy/gpo.png)
 
 ---
 
-## GPResult Verification
+### GPResult Verification
 
 ![GPResult](../images/testing/gpresult.png)
 
 ---
 
-# Summary
+## Summary
 
 The Group Policy implementation demonstrates centralized administration of Windows workstations within an Active Directory environment.
 
 The deployed policies automate user configuration, improve endpoint security, restrict unauthorized administrative actions, and simplify access to shared resources.
 
-This implementation reflects common enterprise administration practices used to standardize client computers and enforce organizational security policies in Windows Server environments.
+This implementation reflects common enterprise administration practices used to standardize client computers, improve endpoint security, and simplify centralized management in Windows Server environments.

@@ -1,14 +1,20 @@
+# 🌍 Languages
+
+- 🇬🇧 English (default)
+- 🇷🇺 [Русский](docs/ru/04-dhcp.md)
+- 🇺🇦 [Українська](docs/uk/04-dhcp.md)
+
 # 📡 DHCP Server Configuration
 
 ## Overview
 
 This document describes the deployment and configuration of the Dynamic Host Configuration Protocol (DHCP) service within the Enterprise Active Directory Lab.
 
-The DHCP server automatically assigns IPv4 addresses and other network parameters to domain-joined client computers, simplifying network administration and ensuring consistent configuration.
+The DHCP server automatically assigns IPv4 addresses, DNS settings, and other network parameters to domain-joined client computers, simplifying network administration and ensuring consistent configuration.
 
 ---
 
-# DHCP Server Role
+## DHCP Server Role
 
 The DHCP Server role was installed on the Domain Controller (DC01).
 
@@ -23,7 +29,7 @@ The DHCP server was authorized in Active Directory before serving IP addresses t
 
 ---
 
-# DHCP Scope
+## DHCP Scope
 
 A single IPv4 scope was configured for the internal laboratory network.
 
@@ -34,20 +40,19 @@ A single IPv4 scope was configured for the internal laboratory network.
 | Start Address        | 192.168.10.100   |
 | End Address          | 192.168.10.200   |
 | Subnet Mask          | 255.255.255.0    |
-| Default Gateway      | 192.168.10.1     |
+| Default Gateway      | N/A              |
 | Preferred DNS Server | 192.168.10.10    |
 
 The scope provides automatic address assignment for all Windows 11 client computers.
 
 ---
 
-# DHCP Options
+## DHCP Options
 
 The following DHCP options were configured.
 
 | Option                | Value            |
 | --------------------- | ---------------- |
-| Router (003)          | 192.168.10.1     |
 | DNS Server (006)      | 192.168.10.10    |
 | DNS Domain Name (015) | KUZNIETSOV.local |
 
@@ -55,7 +60,7 @@ These options ensure that clients receive the required network settings during t
 
 ---
 
-# Address Leases
+## Address Leases
 
 After joining the domain and renewing their network configuration, both client computers successfully obtained IP addresses from the DHCP server.
 
@@ -64,11 +69,11 @@ After joining the domain and renewing their network configuration, both client c
 | CLIENT01 | DHCP           |
 | CLIENT02 | DHCP           |
 
-The leases are visible in the DHCP management console under **Address Leases**.
+The active leases are visible in the DHCP management console under **Address Leases**.
 
 ---
 
-# DHCP Lease Process
+## DHCP Lease Process
 
 Each client follows the standard DHCP process:
 
@@ -81,13 +86,12 @@ After the lease is granted, the client automatically receives:
 
 * IPv4 Address
 * Subnet Mask
-* Default Gateway
 * Preferred DNS Server
 * DNS Suffix
 
 ---
 
-# Validation
+## Validation
 
 The DHCP deployment was validated using the following tests.
 
@@ -102,7 +106,7 @@ The DHCP deployment was validated using the following tests.
 
 ---
 
-# Verification Commands
+## Verification Commands
 
 The following commands were used during testing.
 
@@ -126,28 +130,28 @@ ipconfig /release
 
 ---
 
-# Screenshots
+## Screenshots
 
-## DHCP Manager
+### DHCP Manager
 
 ![DHCP Manager](../images/dhcp/dhcp-manager.png)
 
 ---
 
-## Address Leases
+### Address Leases
 
 ![DHCP Leases](../images/dhcp/dhcp-leases.png)
 
 ---
 
-## Client IP Configuration
+### Client IP Configuration
 
 ![IP Configuration](../images/testing/ipconfig.png)
 
 ---
 
-# Summary
+## Summary
 
 The DHCP Server successfully provides automatic IPv4 configuration for all Windows 11 domain clients.
 
-Centralized address management reduces administrative effort, minimizes configuration errors, and ensures consistent network settings across the laboratory environment. All clients successfully received valid leases, DNS settings, and gateway information from the authorized DHCP server.
+Centralized address management reduces administrative effort, minimizes configuration errors, and ensures consistent network settings across the laboratory environment. All clients successfully received valid DHCP leases, DNS settings, and domain configuration from the authorized DHCP server.
