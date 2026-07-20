@@ -134,19 +134,19 @@ ipconfig /release
 
 ### DHCP Manager
 
-![DHCP Manager](images/dhcp/dhcp-manager.png)
+![DHCP Manager](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/dhcp/dhcp-manager.png)
 
 ---
 
 ### Address Leases
 
-![DHCP Leases](images/dhcp/dhcp-leases.png)
+![DHCP Leases](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/dhcp/dhcp-leases.png)
 
 ---
 
 ### Client IP Configuration
 
-![IP Configuration](images/testing/ipconfig.png)
+![IP Configuration](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ipconfig.png)
 
 ---
 

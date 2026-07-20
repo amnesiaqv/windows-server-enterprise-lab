@@ -147,25 +147,25 @@ KUZNIETSOV.local
 
 ### Active Directory Users and Computers
 
-![Active Directory](images/active-directory/active-directory.png)
+![Active Directory](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/active-directory/active-directory.png)
 
 ---
 
 ### Користувачі домену
 
-![Users](images/active-directory/users.png)
+![Users](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/active-directory/users.png)
 
 ---
 
 ### Групи безпеки
 
-![Security Groups](images/active-directory/security-groups.png)
+![Security Groups](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/active-directory/security-groups.png)
 
 ---
 
 ### Робоча станція, приєднана до домену
 
-![Domain Joined](images/client/domain-joined.png)
+![Domain Joined](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/client/domain-joined.png)
 
 ---
 

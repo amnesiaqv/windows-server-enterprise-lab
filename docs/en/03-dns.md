@@ -118,19 +118,19 @@ The preferred DNS server on each client points to the Domain Controller.
 
 ### DNS Manager
 
-![DNS Manager](images/dns/dns-manager.png)
+![DNS Manager](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/dns/dns-manager.png)
 
 ---
 
 ### IP Configuration
 
-![IP Configuration](images/testing/ipconfig.png)
+![IP Configuration](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ipconfig.png)
 
 ---
 
 ### DNS Resolution
 
-![NSLookup](images/testing/nslookup.png)
+![NSLookup](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/nslookup.png)
 
 ---
 

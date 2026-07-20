@@ -110,25 +110,25 @@
 
 ### Общие папки
 
-![Shared Folders](images/file-server/file-server.png)
+![Shared Folders](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/file-server/file-server.png)
 
 ---
 
 ### Разрешения NTFS
 
-![NTFS Permissions](images/file-server/ntfs-permissions.png)
+![NTFS Permissions](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/file-server/ntfs-permissions.png)
 
 ---
 
 ### Разрешения общего доступа
 
-![Share Permissions](images/file-server/share-permissions.png)
+![Share Permissions](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/file-server/share-permissions.png)
 
 ---
 
 ### Подключенный сетевой диск
 
-![Mapped Drive](images/client/mapped-drive.png)
+![Mapped Drive](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/client/mapped-drive.png)
 
 ---
 

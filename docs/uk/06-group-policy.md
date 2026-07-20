@@ -149,13 +149,13 @@ gpresult /r
 
 ### Group Policy Management Console
 
-![Group Policy Management](images/group-policy/gpo.png)
+![Group Policy Management](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/group-policy/gpo.png)
 
 ---
 
 ### Перевірка GPResult
 
-![GPResult](images/testing/gpresult.png)
+![GPResult](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/gpresult.png)
 
 ---
 

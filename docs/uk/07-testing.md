@@ -159,31 +159,31 @@ gpresult /r
 
 ### IP-конфігурація
 
-![IP Configuration](images/testing/ipconfig.png)
+![IP Configuration](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка Ping
 
-![Ping Test](images/testing/ping.png)
+![Ping Test](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ping.png)
 
 ---
 
 ### Розпізнавання DNS
 
-![NSLookup](images/testing/nslookup.png)
+![NSLookup](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/nslookup.png)
 
 ---
 
 ### Результат Group Policy
 
-![GPResult](images/testing/gpresult.png)
+![GPResult](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/gpresult.png)
 
 ---
 
 ### Перегляд подій
 
-![Event Viewer](images/testing/event-viewer.png)
+![Event Viewer](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/event-viewer.png)
 
 ---
 

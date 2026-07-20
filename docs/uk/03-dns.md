@@ -118,19 +118,19 @@ ipconfig /all
 
 ### DNS Manager
 
-![DNS Manager](images/dns/dns-manager.png)
+![DNS Manager](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/dns/dns-manager.png)
 
 ---
 
 ### Конфігурація IP
 
-![IP Configuration](images/testing/ipconfig.png)
+![IP Configuration](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка DNS
 
-![NSLookup](images/testing/nslookup.png)
+![NSLookup](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/nslookup.png)
 
 ---
 

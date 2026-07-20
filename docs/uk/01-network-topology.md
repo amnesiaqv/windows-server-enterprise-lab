@@ -16,7 +16,7 @@
 
 ## Схема мережі
 
-![Network Topology](images/infrastructure/topology.png)
+![Network Topology](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/infrastructure/topology.png)
 
 ---
 
@@ -139,25 +139,25 @@ gpresult /r
 
 ### Конфігурація мережі
 
-![IP Configuration](images/testing/ipconfig.png)
+![IP Configuration](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ipconfig.png)
 
 ---
 
 ### Перевірка з'єднання
 
-![Ping Test](images/testing/ping.png)
+![Ping Test](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/ping.png)
 
 ---
 
 ### DNS-резолюція
 
-![NSLookup](images/testing/nslookup.png)
+![NSLookup](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/nslookup.png)
 
 ---
 
 ### Застосування групових політик
 
-![GPResult](images/testing/gpresult.png)
+![GPResult](https://raw.githubusercontent.com/amnesiaqv/windows-server-enterprise-lab/main/images/testing/gpresult.png)
 
 ---
 
