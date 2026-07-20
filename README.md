@@ -49,7 +49,7 @@ The following objectives were successfully completed during the implementation o
 | Hypervisor              | Oracle VirtualBox   |
 | Server Operating System | Windows Server 2025 |
 | Client Operating System | Windows 11 Pro      |
-| Domain Name             | KUZNIETSOV.local    |
+| Domain Name             | corp.local    |
 | Domain Controller       | DC01                |
 | Virtual Network         | Internal Network    |
 | Number of Servers       | 1                   |
@@ -181,3 +181,147 @@ Detailed configuration guides are available in the `docs` directory.
 ---
 
 > Continue reading to learn how each infrastructure service was configured and validated.
+
+# 🏛️ Infrastructure Design
+
+The laboratory environment simulates a centralized Windows Server infrastructure commonly found in small and medium-sized enterprises (SMEs). The deployment focuses on identity management, network services, centralized administration, and secure file sharing.
+
+A single Windows Server 2025 virtual machine acts as the core infrastructure server and hosts multiple critical services. Two Windows 11 Pro virtual machines are joined to the Active Directory domain and function as managed client workstations.
+
+The entire environment is isolated within an Oracle VirtualBox internal network, allowing enterprise technologies to be tested without requiring physical hardware or impacting the host operating system.
+
+---
+
+## Infrastructure Components
+
+| Hostname | Operating System    | Role                                      |
+| -------- | ------------------- | ----------------------------------------- |
+| DC01     | Windows Server 2025 | Domain Controller, DNS, DHCP, File Server |
+| CLIENT01 | Windows 11 Pro      | Domain Workstation                        |
+| CLIENT02 | Windows 11 Pro      | Domain Workstation                        |
+
+---
+
+# 🖧 Network Architecture
+
+```text
+                    Oracle VirtualBox
+                   Internal Network
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+        │                 │                 │
+      DC01            CLIENT01         CLIENT02
+        │
+        ├── Active Directory
+        ├── DNS
+        ├── DHCP
+        ├── File Services
+        └── Group Policy
+```
+
+---
+
+## IP Addressing
+
+| Device            | Address                         |
+| ----------------- | ------------------------------- |
+| Domain Controller | 192.168.10.10                   |
+| DNS Server        | 192.168.10.10                   |
+| DHCP Server       | 192.168.10.10                   |
+| Default Gateway   | 192.168.10.1                    |
+| DHCP Scope        | 192.168.10.100 - 192.168.10.200 |
+
+Clients automatically receive:
+
+* IP Address
+* Subnet Mask
+* Default Gateway
+* Preferred DNS Server
+* Lease Time
+
+using the DHCP service running on the Domain Controller.
+
+---
+
+# 🏢 Active Directory Structure
+
+The Active Directory environment was organized using Organizational Units (OUs) to simplify administration and Group Policy deployment.
+
+```text
+Domain
+│
+└── Company
+    │
+    ├── Users
+    │     ├── IT
+    │     ├── HR
+    │     └── Finance
+    │
+    ├── Groups
+    │
+    ├── Computers
+    │
+    └── Servers
+```
+
+This structure follows common enterprise administration practices by separating users, computers, and administrative objects into dedicated Organizational Units.
+
+---
+
+# 👥 User and Group Management
+
+User accounts were created inside their respective Organizational Units and assigned to security groups according to their department.
+
+Security groups are used to manage permissions instead of assigning permissions directly to users. This approach simplifies administration and follows Microsoft's recommended access control model.
+
+Example departmental groups include:
+
+| Group   | Purpose            |
+| ------- | ------------------ |
+| IT      | IT Department      |
+| HR      | Human Resources    |
+| Finance | Finance Department |
+
+---
+
+# 🔑 Authentication
+
+Both Windows 11 clients were successfully joined to the Active Directory domain.
+
+Domain authentication provides centralized identity management, allowing users to authenticate against the Domain Controller instead of maintaining separate local accounts on each workstation.
+
+Benefits include:
+
+* Centralized account management
+* Single sign-on (SSO)
+* Centralized password policies
+* Group Policy enforcement
+* Simplified administration
+
+---
+
+# 📸 Screenshots
+
+The following screenshots should be added to the repository:
+
+* Active Directory Users and Computers
+* Organizational Units
+* User Accounts
+* Security Groups
+* Domain Join
+* Computer Objects
+
+Example:
+
+```markdown
+![Active Directory](images/active-directory.png)
+
+![Organizational Units](images/ou-structure.png)
+
+![Domain Computers](images/domain-computers.png)
+```
+
+---
+
+> The next section documents the deployment and validation of the DNS and DHCP infrastructure services.
