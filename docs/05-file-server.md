@@ -29,11 +29,10 @@ Several shared folders were created to simulate departmental resources.
 
 | Share       | Purpose                   |
 | ----------- | ------------------------- |
-| Departments | Shared company data       |
+| Public      | Shared company data       |
 | IT          | IT department files       |
 | HR          | Human Resources documents |
-
-> If your lab uses different folder names, replace the examples above with the actual names.
+| Finance     | Finance files             |
 
 ---
 
@@ -86,7 +85,7 @@ This allows users to access shared folders without manually creating network con
 Example:
 
 ```text id="x2zv5q"
-\\DC01\Departments
+\\DC01\Public
 ```
 
 ---
