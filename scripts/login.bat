@@ -1,0 +1,1 @@
+net use P: \\DC01\Public
