@@ -23,6 +23,27 @@ Although this environment was created as a learning project, every service was c
 
 ---
 
+## 📚 Table of Contents
+
+* [🎯 Project Objectives](#-project-objectives)
+* [🖥️ Lab Environment](#️-lab-environment)
+* [🌐 Network Topology](#-network-topology)
+* [📡 Network Configuration](#-network-configuration)
+* [⚙️ Technologies](#️-technologies)
+* [✨ Key Features](#-key-features)
+* [📁 Repository Structure](#-repository-structure)
+* [📌 Documentation](#-documentation)
+* [🏛️ Infrastructure Design](#️-infrastructure-design)
+* [🖧 Network Architecture](#-network-architecture)
+* [🏢 Active Directory Structure](#-active-directory-structure)
+* [👥 User and Group Management](#-user-and-group-management)
+* [🔑 Authentication](#-authentication)
+* [🚀 Project Highlights](#-project-highlights)
+* [💼 Skills Demonstrated](#-skills-demonstrated)
+* [📸 Screenshots](#-screenshots)
+
+---
+
 ## 🎯 Project Objectives
 
 The following objectives were successfully completed during the implementation of the lab:
@@ -49,27 +70,11 @@ The following objectives were successfully completed during the implementation o
 | Hypervisor              | Oracle VirtualBox   |
 | Server Operating System | Windows Server 2025 |
 | Client Operating System | Windows 11 Pro      |
-| Domain Name             | corp.local    |
+| Domain Name             | KUZNIETSOV.local    |
 | Domain Controller       | DC01                |
 | Virtual Network         | Internal Network    |
 | Number of Servers       | 1                   |
 | Number of Clients       | 2                   |
-
----
-
-# 🏗️ Infrastructure Architecture
-
-The infrastructure consists of one Windows Server virtual machine acting as the Domain Controller and two Windows 11 client computers joined to the Active Directory domain.
-
-The Domain Controller hosts several critical enterprise services:
-
-* Active Directory Domain Services
-* DNS Server
-* DHCP Server
-* File Server
-* Group Policy Management
-
-Both Windows 11 clients receive network configuration automatically from the DHCP server and authenticate against Active Directory.
 
 ---
 
@@ -204,21 +209,37 @@ The entire environment is isolated within an Oracle VirtualBox internal network,
 
 # 🖧 Network Architecture
 
-```text
-                    Oracle VirtualBox
-                   Internal Network
-                          │
-        ┌─────────────────┼─────────────────┐
-        │                 │                 │
-        │                 │                 │
-      DC01            CLIENT01         CLIENT02
-        │
-        ├── Active Directory
-        ├── DNS
-        ├── DHCP
-        ├── File Services
-        └── Group Policy
+```mermaid
+graph TD
+
+    Internet["Gateway<br/>192.168.10.1"]
+
+    DC["DC01<br/>Windows Server 2025<br/>192.168.10.10"]
+
+    C1["CLIENT01<br/>Windows 11 Pro"]
+
+    C2["CLIENT02<br/>Windows 11 Pro"]
+
+    Internet --> DC
+
+    DC -->|"Active Directory"| C1
+    DC -->|"Active Directory"| C2
+
+    DC -->|"DNS"| C1
+    DC -->|"DNS"| C2
+
+    DC -->|"DHCP"| C1
+    DC -->|"DHCP"| C2
+
+    DC -->|"Group Policy"| C1
+    DC -->|"Group Policy"| C2
+
+    DC -->|"File Shares"| C1
+    DC -->|"File Shares"| C2
 ```
+
+The Domain Controller provides all core infrastructure services for the laboratory environment. Windows 11 clients automatically receive network configuration from the DHCP server, resolve names through the DNS service, authenticate against Active Directory, receive Group Policy Objects (GPOs), and access centralized file shares.
+
 
 ---
 
@@ -298,6 +319,90 @@ Benefits include:
 * Centralized password policies
 * Group Policy enforcement
 * Simplified administration
+
+---
+
+# 🚀 Project Highlights
+
+This project demonstrates the deployment of a fully functional Microsoft enterprise infrastructure using Windows Server 2025 and Windows 11 clients.
+
+Implemented features include:
+
+* ✅ Deployed Windows Server 2025 as a Domain Controller
+* ✅ Configured Active Directory Domain Services (AD DS)
+* ✅ Implemented an Active Directory-integrated DNS Server
+* ✅ Configured DHCP with automatic IPv4 address assignment
+* ✅ Joined Windows 11 clients to the Active Directory domain
+* ✅ Designed Organizational Units (OUs) for logical administration
+* ✅ Created domain users and security groups
+* ✅ Configured NTFS and Share Permissions
+* ✅ Deployed a centralized File Server
+* ✅ Configured Group Policy Objects (GPOs)
+* ✅ Implemented automatic drive mapping
+* ✅ Validated DNS, DHCP, authentication, and file sharing
+* ✅ Verified Group Policy processing using `gpresult`
+* ✅ Tested connectivity using `ping`, `nslookup`, and `ipconfig`
+
+---
+
+# 💼 Skills Demonstrated
+
+This project demonstrates hands-on experience with Microsoft enterprise infrastructure technologies.
+
+### Windows Server Administration
+
+* Windows Server 2025
+* Server Manager
+* Feature and Role Installation
+* Windows Server Management
+
+### Active Directory
+
+* Active Directory Domain Services (AD DS)
+* Organizational Units (OU)
+* Domain Users
+* Security Groups
+* Domain Join
+* Authentication
+
+### Networking
+
+* DNS Server Configuration
+* DHCP Server Configuration
+* IPv4 Address Management
+* Name Resolution
+* Network Connectivity Testing
+
+### Group Policy
+
+* Group Policy Management Console (GPMC)
+* Organizational Unit-based Policy Assignment
+* Drive Mapping
+* Login Scripts
+* Security Policies
+
+### File Services
+
+* Shared Folders
+* NTFS Permissions
+* Share Permissions
+* Access Control
+* Centralized Storage
+
+### Client Administration
+
+* Windows 11 Domain Clients
+* Domain Authentication
+* Group Policy Processing
+* Drive Mapping Validation
+
+### Tools & Technologies
+
+* Oracle VirtualBox
+* PowerShell
+* Command Prompt
+* Event Viewer
+* Windows Administrative Tools
 
 ---
 
