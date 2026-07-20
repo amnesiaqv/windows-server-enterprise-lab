@@ -1,4 +1,4 @@
-# 🏢 Windows Server Enterprice Lab
+# 🏢 Enterprise Active Directory Lab
 
 > A production-inspired Windows Server 2025 infrastructure built in Oracle VirtualBox.
 
